@@ -1,88 +1,88 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的个人主页</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 850px;
-      margin: 60px auto;
-      padding: 0 24px;
-      line-height: 1.8;
-      color: #222;
-      background: #fafafa;
-    }
-    h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-    h2 {
-      margin-top: 36px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 6px;
-    }
-    .card {
-      background: white;
-      padding: 24px;
-      border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-      margin-bottom: 24px;
-    }
-    a {
-      color: #0969da;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Tingxuan Han researches trustworthy multi-agent systems, long-term agent memory, and AI security.">
+  <meta name="theme-color" content="#f4f7f8">
+  <meta property="og:title" content="Tingxuan Han | Research">
+  <meta property="og:description" content="Research in trustworthy multi-agent systems, long-term memory, and AI security.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tingxuanhan.github.io/">
+  <meta property="og:image" content="https://github.com/TingxuanHan.png?size=1200">
+  <title>Tingxuan Han | Research</title>
+  <link rel="preconnect" href="https://github.com">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" translate="no" aria-label="Tingxuan Han, home"><span>TH</span><b>Tingxuan Han</b></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" aria-label="Primary navigation">
+      <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      <button class="theme-button" type="button" aria-label="Switch color theme"><span>Theme: system</span></button>
+    </nav>
+  </header>
 
-  <div class="card">
-    <h1>你的名字</h1>
-    <p>博士研究生 / 研究方向：隐私保护、图数据分析、机器学习</p>
-    <p>
-      Email: your_email@example.com<br>
-      GitHub: <a href="https://github.com/你的用户名">https://github.com/你的用户名</a>
-    </p>
-  </div>
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="kicker">Researcher in Trustworthy AI Systems</p>
+        <h1 id="hero-title" translate="no">Tingxuan<br>Han</h1>
+        <p class="statement">I study how memory shapes the reliability and security of multi-agent AI systems.</p>
+        <div class="actions"><a class="button" href="#research">View Research</a><a href="https://github.com/TingxuanHan">GitHub <span aria-hidden="true">&#8599;</span></a></div>
+      </div>
+      <aside class="profile" aria-label="Research profile">
+        <figure class="portrait"><img src="https://github.com/TingxuanHan.png?size=720" width="720" height="720" alt="Tingxuan Han" fetchpriority="high"></figure>
+        <dl class="facts">
+          <div><dt>Focus</dt><dd>Multi-agent systems</dd></div>
+          <div><dt>Methods</dt><dd>Security and evaluation</dd></div>
+          <div><dt>Current question</dt><dd>How does untrusted information persist across agent memory?</dd></div>
+        </dl>
+      </aside>
+    </section>
 
-  <div class="card">
-    <h2>About Me</h2>
-    <p>
-      我目前的研究兴趣包括差分隐私、图数据分析、本地化差分隐私、联邦学习和隐私保护机器学习。
-      我的工作主要关注如何在保护用户隐私的同时提升数据分析结果的可用性和鲁棒性。
-    </p>
-  </div>
+    <section id="about" class="section" aria-labelledby="about-title">
+      <header class="section-heading"><h2 id="about-title">About</h2></header>
+      <div class="about-copy">
+        <p class="lead">My work sits at the intersection of AI agents, persistent memory, and system security.</p>
+        <p>I am interested in how information moves between autonomous agents, how it is stored and retrieved over time, and how those processes can produce delayed or cross-agent failures. I build reproducible evaluations that connect precise threat models with observable system behavior.</p>
+        <p class="note">Add your current institution, degree, laboratory, and advisor here when ready.</p>
+      </div>
+    </section>
 
-  <div class="card">
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Privacy-preserving graph analytics</li>
-      <li>Local differential privacy</li>
-      <li>Triangle counting under privacy constraints</li>
-      <li>Federated learning and privacy attacks</li>
-    </ul>
-  </div>
+    <section id="research" class="section research-section" aria-labelledby="research-title">
+      <header class="research-heading"><h2 id="research-title">Research</h2><p>Three connected questions guide my current work.</p></header>
+      <div class="research-grid">
+        <article class="research-primary"><p class="label">Memory integrity</p><h3>When can one agent alter what another agent remembers?</h3><p>Studying persistent memory poisoning, trust boundaries, and the conditions under which untrusted information becomes accepted experience.</p></article>
+        <article><p class="label">Propagation</p><h3>How do failures travel across agents?</h3><p>Tracing indirect influence through communication, delegation, and private memory stores.</p></article>
+        <article class="research-tinted"><p class="label">Evaluation</p><h3>What evidence makes an agent security claim credible?</h3><p>Designing measurable benchmarks for persistence, delayed impact, and cross-agent effects.</p></article>
+      </div>
+    </section>
 
-  <div class="card">
-    <h2>Publications</h2>
-    <ul>
-      <li>论文 1：标题，会议/期刊，年份。</li>
-      <li>论文 2：标题，会议/期刊，年份。</li>
-    </ul>
-  </div>
+    <section id="publications" class="section" aria-labelledby="pub-title">
+      <header class="section-heading"><h2 id="pub-title">Selected Work</h2></header>
+      <div>
+        <div class="work-progress"><div><p class="label">Research in Progress</p><h3>Trustworthy memory in multi-agent systems</h3></div><p>This section is ready for papers, preprints, reports, code, and BibTeX links. It contains no invented publication record.</p></div>
+        <div class="publication" aria-label="Publication Entry Template"><span class="year">20XX</span><div><p class="label">Publication Entry Template</p><h3>Paper title</h3><p><strong>Tingxuan Han</strong>, co-authors</p><p>Venue or preprint status</p></div><div class="pub-links"><span>Paper</span><span>Code</span><span>BibTeX</span></div></div>
+      </div>
+    </section>
 
-  <div class="card">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>项目名称 1：</strong> 简单介绍你的项目。</li>
-      <li><strong>项目名称 2：</strong> 简单介绍你的项目。</li>
-    </ul>
-  </div>
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <header class="section-heading"><h2 id="experience-title">Experience</h2></header>
+      <div class="timeline">
+        <article><p class="label">Present</p><div><h3>Current Academic Position</h3><p>Institution, department, and laboratory</p><p class="note">Replace this entry with your current degree or research role.</p></div></article>
+        <article><p class="label">Earlier</p><div><h3>Previous Education or Research Experience</h3><p>Institution and concise description</p><p class="note">Add only academically relevant milestones.</p></div></article>
+      </div>
+    </section>
 
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div><h2 id="contact-title">Let Us Discuss Research.</h2><p>For research conversations, collaboration, or questions about my work, email is the best place to start.</p></div>
+      <div class="contact-links"><span>Add academic email</span><a href="https://github.com/TingxuanHan">GitHub <span aria-hidden="true">&#8599;</span></a><span>Add Google Scholar</span><span>Add ORCID</span></div>
+    </section>
+  </main>
+  <footer><p>&copy; <span id="year">2026</span> Tingxuan Han</p><a href="#top">Back to Top</a></footer>
 </body>
 </html>
