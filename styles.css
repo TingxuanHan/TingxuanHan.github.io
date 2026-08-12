@@ -84,3 +84,11 @@ body{font-size:.95rem;line-height:1.66}
 .hero{padding-block:clamp(3.25rem,6vw,5rem)}
 .hero h1{max-width:none;font-size:clamp(2.55rem,4.5vw,3.2rem);white-space:nowrap}
 @media(max-width:767px){.hero{padding-block:3rem 3.75rem}.hero h1{font-size:clamp(2.35rem,9.5vw,2.75rem)}}
+/* Clearer heading and control hierarchy */
+.section-heading h2,.research-heading h2,.contact h2{font-size:clamp(1.65rem,2.7vw,2rem);line-height:1.18}
+.research-grid h3,.research-primary h3{font-size:1.12rem;line-height:1.4}
+.work-progress h3,.publication h3,.timeline h3{font-size:1.1rem;line-height:1.4}
+.button{min-height:2.85rem;padding:.62rem 1rem;font-size:.96rem;font-weight:700}
+.actions{font-size:.94rem}
+.theme-button,.menu-button{min-height:2.65rem;padding:.45rem .8rem;font-size:.76rem;font-weight:650}
+@media(max-width:767px){.section-heading h2,.research-heading h2,.contact h2{font-size:1.7rem}.research-grid h3,.research-primary h3,.work-progress h3,.publication h3,.timeline h3{font-size:1.08rem}.button{min-height:2.9rem;font-size:.98rem}.menu-button{min-width:3.75rem}}
